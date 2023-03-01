@@ -12,8 +12,10 @@
     <ul>
         {% for animal in animal_list %}
         <li>
+            <a href="/animal/{{animal.pk}}">
             {{animal.image}}
             {{animal.name}}
+            </a>
         </li>
         {%endfor%}
     </ul>
