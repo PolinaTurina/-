@@ -11,12 +11,18 @@
     <p>Список животных:</p>
     <ul>
         {% for animal in animal_list %}
-        <li>
-            <a href="/animal/{{animal.pk}}">
-            {{animal.image}}
-            {{animal.name}}
+        <div style="border: 1px solid #e9729b; background-color: #febcd3; width: 800px; display: flex; border-radius: 10px; padding: 10px; margin: 5px;">
+        <li style="display: flex; align-items: center;">
+            
+           
+            <a href="/animal/{{animal.pk}}" style="display: flex; align-items: center;">
+            <div><img src="{{ animal.image.url }}" style="height: 70px; width: 65px; border-radius: 50%;"></div>
+            <div style="margin-left: 10px;"><h4>{{animal.name}}</h4></div>
             </a>
+            
+           
         </li>
+        </div>
         {%endfor%}
     </ul>
     
