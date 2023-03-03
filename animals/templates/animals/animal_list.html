@@ -2,7 +2,8 @@
 
 
 {% block content %}
-    <h1>Главная страница</h1>
+    <div class="content">
+    <h1 class="h">Главная страница</h1>
     <p>Список животных:</p>
     <ul>
         {% for animal in animal_list %}
@@ -18,7 +19,9 @@
            
         </li>
         </div>
+    
         {%endfor%}
     </ul>
+    </div>
 
 {% endblock %} 

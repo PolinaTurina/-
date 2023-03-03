@@ -15,3 +15,23 @@ body{
     box-shadow: 0px 0px 5px 3px #40232d29;
     border: 1px solid #e9729b4d;
 }
+.top_a{
+    text-decoration: none;
+    font-size: 23px;
+    padding-left: 50px;
+}
+.top{
+    margin-left: 100px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h{
+    margin: 30px;
+    color: #b73b66;
+}
+a{
+    color: #d15f5f;
+}

@@ -17,3 +17,7 @@ def animal_list_view(request):
     animals = Animal.objects.all()
     context = {"animal_list": animals}
     return render(request, "animals/animal_list.html", context)
+
+
+def about_view(request):
+    return render(request, 'animals/about.html')

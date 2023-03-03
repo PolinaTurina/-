@@ -2,9 +2,10 @@
    
 
 {% block content %}
-   <h1>Подробно</h1>
-    <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; background-color: #febcd3; padding: 30px;">
-        <div style="margin-left: 30px;">
+    <div class="content">
+   <h1 class="h">Подробно</h1>
+    <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; background-color: #febcd3; padding: 70px; border-radius: 10px;">
+        <div style="margin-left: 30px; width: 300px;">
             <p>Вид: {{animal.kind}}</p>
             <p>Имя: {{animal.name}}</p>
             <p>Описание: {{animal.description}}</p>
@@ -12,5 +13,6 @@
         </div>
         <img src="{{ animal.image.url }}" alt="" style="width: 400px; border-radius: 4%; box-shadow: 0px 0px 10px 1px #7623407a;">
     </div>
-    
+    </div>
+
 {% endblock %}

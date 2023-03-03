@@ -8,7 +8,17 @@
 </head>
 <body>
     <div class="header">
-        <h1>Zоопарк</h1>
+        <h1 style="margin-left: 50px;">
+            <a href="{% url 'animal_list' %}" style="text-decoration: none;">Zоопарк</a>
+        </h1>
+            <div class="top">
+                <a class="top_a" href="{% url 'animal_list' %}">Главная</a>
+                <a class="top_a" href="{% url 'about' %}">О нас</a>
+                <a class="top_a" href="#">Ссылка</a>
+                <a class="top_a" href="#">Ссылка</a>
+            </div>
+            
+        
     </div>
     <div>
         {% block content %}
